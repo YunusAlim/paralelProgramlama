@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
 \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 \usepackage[a4paper,margin=1.75cm]{geometry}
 \usepackage{titlesec}
@@ -28,7 +29,8 @@
 \title{\vspace{-1.2cm}\textbf{\color{navy} Thread Tabanlı Convex (Dışbükey) Poligon Kontrolü}\\[2pt]
 \large Çapraz Çarpım Tabanlı Konvekslik Testinin Java İş Parçacıkları ile Paralelleştirilmesi}
 \author{Duha Keskin (22360859003) \quad Yunus Alim Avşar (23360859710)}
-\date{Paralel Programlama --- Haziran 2026}
+\date{Paralel Programlama --- Haziran 2026\\[3pt]
+{\small\url{https://github.com/YunusAlim/paralelProgramlama}}}
 
 \begin{document}
 \maketitle
@@ -326,6 +328,7 @@ hızlanmanın hem problem boyutuna hem de fiziksel çekirdek yapısına bağlı 
 
 \paragraph{Çalıştırma.} \code{javac -d out src/*.java} \quad ; \quad
 \code{java -Xmx4g -cp out Main} \ (doğruluk testlerini koşar ve süreleri
-\code{results.csv} dosyasına yazar).
+\code{results.csv} dosyasına yazar). Kaynak kodu:
+\url{https://github.com/YunusAlim/paralelProgramlama}.
 
 \end{document}
